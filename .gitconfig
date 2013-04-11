@@ -1,0 +1,19 @@
+[merge]
+	tool = BeyondCompare3
+[user]
+	name = kyle.chapman
+	email = kyle.chapman@wiggle.co.uk
+[core]
+	editor = notepad
+	autocrlf = true
+[diff]
+	guitool = beyondcompare3
+[mergetool "TortoiseMerge"]
+	path = c:/Program Files/TortoiseSVN/bin/TortoiseMerge.exe
+	cmd = \"c:/Program Files/TortoiseSVN/bin/TortoiseMerge.exe\" /base:\"$BASE\" /mine:\"$LOCAL\" /theirs:\"$REMOTE\" /merged:\"$MERGED\"
+[difftool "beyondcompare3"]
+	path = C:/Program Files (x86)/Beyond Compare 3/BComp.exe
+	cmd = \"C:/Program Files (x86)/Beyond Compare 3/BComp.exe\" \"$LOCAL\" \"$REMOTE\"
+[mergetool "BeyondCompare3"]
+	path = C:/Program Files (x86)/Beyond Compare 3/BComp.exe
+	cmd = \"C:/Program Files (x86)/Beyond Compare 3/BComp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
